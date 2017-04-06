@@ -1,6 +1,6 @@
 <?php
 
-namespace Youshido\GraphQLBundle\Command;
+namespace pekarja5\GraphQLBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Config\Resource\DirectoryResource;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Youshido\GraphQLBundle;
+namespace pekarja5\GraphQLBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\EventDispatcher\DependencyInjection\RegisterListenersPass;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Youshido\GraphQLBundle\DependencyInjection\Compiler\GraphQlCompilerPass;
-use Youshido\GraphQLBundle\DependencyInjection\GraphQLExtension;
+use pekarja5\GraphQLBundle\DependencyInjection\Compiler\GraphQlCompilerPass;
+use pekarja5\GraphQLBundle\DependencyInjection\GraphQLExtension;
 
 class GraphQLBundle extends Bundle
 {

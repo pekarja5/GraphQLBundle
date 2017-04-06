@@ -195,8 +195,8 @@ Voter example (add in to your `services.yml` file with tag `security.voter`):
 ```php
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
-use Youshido\GraphQL\Execution\ResolveInfo;
-use Youshido\GraphQLBundle\Security\Manager\SecurityManagerInterface;
+use pekarja5\GraphQLBundle\Execution\ResolveInfo;
+use pekarja5\GraphQLBundle\Security\Manager\SecurityManagerInterface;
 
 class GraphQLVoter extends Voter
 {

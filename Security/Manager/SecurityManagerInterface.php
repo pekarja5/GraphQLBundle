@@ -1,8 +1,8 @@
 <?php
 
-namespace Youshido\GraphQLBundle\Security\Manager;
+namespace pekarja5\GraphQLBundle\Security\Manager;
 
-use Youshido\GraphQL\Execution\ResolveInfo;
+use pekarja5\GraphQLBundle\Execution\ResolveInfo;
 use Youshido\GraphQL\Parser\Ast\Query;
 
 /**

@@ -1,12 +1,11 @@
 <?php
 
-namespace Youshido\GraphQLBundle\Execution;
+namespace pekarja5\GraphQLBundle\Execution;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Youshido\GraphQL\Execution\Context\ExecutionContextInterface;
 use Youshido\GraphQL\Execution\Processor as BaseProcessor;
-use Youshido\GraphQL\Execution\ResolveInfo;
 use Youshido\GraphQL\Field\Field;
 use Youshido\GraphQL\Field\FieldInterface;
 use Youshido\GraphQL\Parser\Ast\Field as AstField;
@@ -15,8 +14,8 @@ use Youshido\GraphQL\Parser\Ast\Query;
 use Youshido\GraphQL\Parser\Ast\Query as AstQuery;
 use Youshido\GraphQL\Type\TypeService;
 use Youshido\GraphQL\Exception\ResolveException;
-use Youshido\GraphQLBundle\Event\ResolveEvent;
-use Youshido\GraphQLBundle\Security\Manager\SecurityManagerInterface;
+use pekarja5\GraphQLBundle\Event\ResolveEvent;
+use pekarja5\GraphQLBundle\Security\Manager\SecurityManagerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class Processor extends BaseProcessor
@@ -57,6 +56,11 @@ class Processor extends BaseProcessor
         return $this;
     }
 
+    public function createResolveInfo(FieldInterface $field, array $astFields, $parentValue = null)
+    {
+        return new ResolveInfo($field, $astFields, $this->executionContext, $parentValue);
+    }
+
     public function processPayload($payload, $variables = [], $reducers = [])
     {
         if ($this->logger) {
@@ -82,7 +86,7 @@ class Processor extends BaseProcessor
         $event = new ResolveEvent($field, $astFields);
         $this->eventDispatcher->dispatch('graphql.pre_resolve', $event);
 
-        $resolveInfo = $this->createResolveInfo($field, $astFields);
+        $resolveInfo = $this->createResolveInfo($field, $astFields, $parentValue);
         $this->assertClientHasFieldAccess($resolveInfo);
 
         if ($field instanceof Field) {

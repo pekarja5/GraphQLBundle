@@ -6,7 +6,7 @@
  * created: 9/23/16 10:08 PM
  */
 
-namespace Youshido\GraphQLBundle\Execution\Container;
+namespace pekarja5\GraphQLBundle\Execution\Container;
 
 
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;

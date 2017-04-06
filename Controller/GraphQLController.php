@@ -5,7 +5,7 @@
  * @author Portey Vasil <portey@gmail.com>
  */
 
-namespace Youshido\GraphQLBundle\Controller;
+namespace pekarja5\GraphQLBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 use Youshido\GraphQL\Validator\Exception\ConfigurationException;
-use Youshido\GraphQLBundle\Execution\Processor;
+use pekarja5\GraphQLBundle\Execution\Processor;
 
 class GraphQLController extends Controller
 {

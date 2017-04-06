@@ -5,12 +5,12 @@
  * @author Portey Vasil <portey@gmail.com>
  */
 
-namespace Youshido\GraphQLBundle\Security\Voter;
+namespace pekarja5\GraphQLBundle\Security\Voter;
 
 
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
-use Youshido\GraphQLBundle\Security\Manager\SecurityManagerInterface;
+use pekarja5\GraphQLBundle\Security\Manager\SecurityManagerInterface;
 
 abstract class AbstractListVoter extends Voter
 {

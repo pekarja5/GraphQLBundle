@@ -1,6 +1,6 @@
 <?php
 
-namespace Youshido\GraphQLBundle\DependencyInjection;
+namespace pekarja5\GraphQLBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

@@ -5,7 +5,7 @@
  * @author Portey Vasil <portey@gmail.com>
  */
 
-namespace Youshido\GraphQLBundle\Security\Voter;
+namespace pekarja5\GraphQLBundle\Security\Voter;
 
 
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Youshido\GraphQLBundle\DependencyInjection\Compiler;
+namespace pekarja5\GraphQLBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
-use Youshido\GraphQLBundle\Security\Voter\BlacklistVoter;
-use Youshido\GraphQLBundle\Security\Voter\WhitelistVoter;
+use pekarja5\GraphQLBundle\Security\Voter\BlacklistVoter;
+use pekarja5\GraphQLBundle\Security\Voter\WhitelistVoter;
 
 /**
  * Date: 25.08.16

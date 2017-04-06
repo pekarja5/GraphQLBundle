@@ -5,12 +5,12 @@
  * @author Portey Vasil <portey@gmail.com>
  */
 
-namespace Youshido\GraphQLBundle\Security\Manager;
+namespace pekarja5\GraphQLBundle\Security\Manager;
 
 
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-use Youshido\GraphQL\Execution\ResolveInfo;
+use pekarja5\GraphQLBundle\Execution\ResolveInfo;
 use Youshido\GraphQL\Parser\Ast\Query;
 
 class DefaultSecurityManager implements SecurityManagerInterface

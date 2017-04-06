@@ -1,6 +1,6 @@
 <?php
 
-namespace Youshido\GraphQLBundle\Event;
+namespace pekarja5\GraphQLBundle\Event;
 
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Youshido\GraphQL\Field\FieldInterface;

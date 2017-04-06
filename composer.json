@@ -1,5 +1,5 @@
 {
-  "name": "youshido/graphql-bundle",
+  "name": "pekarja5/GraphQLBundle",
   "description": "Symfony GraphQl Bundle",
   "license": "proprietary",
   "authors": [
@@ -10,11 +10,15 @@
     {
       "name": "Alexandr Viniychuk",
       "email": "a@viniychuk.com"
+    },
+    {
+      "name": "Jakub Pekař",
+      "email": "pekarja@gmail.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Youshido\\GraphQLBundle\\": ""
+      "pekarja5\\GraphQLBundle\\": ""
     }
   },
   "require": {
